@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petalo de luna</title>
+</head>
+<style>
+    body{
+        background-color: #fcc;
+    }
+    .flor{
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tronco{
+        width: 15px;
+        height: 400px;
+        background-color: #0a0;
+        z-index: 100;
+        position: relative;
+        margin-top: 50px;
+    }
+    .hoja-verde{
+        width: 70px;
+        height: 120px;
+        background-color: #0a0;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: absolute;
+        bottom: 40%;
+        left: 25px;
+        transform: rotate(20deg);
+    }
+    .hoja-verde2{
+        width: 70px;
+        height: 120px;
+        background-color: #0a0;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        position: absolute;
+        bottom: 60%;
+        right: 25px;
+        transform: rotate(160deg);
+    }
+    .espina{
+        width: 20px;
+        height: 20px;
+        background-color: #0a0;
+        position: absolute;
+        bottom: 30%;
+        left: 5px;
+        transform: rotate(45deg);
+    }
+    .espina2{
+        width: 20px;
+        height: 20px;
+        background-color: #0a0;
+        position: absolute;
+        bottom: 50%;
+        right: 5px; 
+        transform: rotate(45deg);
+    }
+    .espina3{
+        width: 20px;
+        height: 20px;
+        background-color: #0a0;
+        position: absolute;
+        bottom: 70%;
+        left: 5px; 
+        transform: rotate(45deg);
+    }
+    .centro{
+        width: 20px;
+        height: 20px;
+        background-color: #a00;
+        border-radius: 100%;
+        position: relative;
+        top: -20px;
+        left: -2px;
+    }
+    .hoja-roja{
+        width: 70px;
+        height: 120px;
+        background-color: #f00;
+        border-radius: 20px;
+        position: absolute;
+        top: -70px;
+        left: -25px;
+    }
+    .hoja-roja2{
+        width: 70px;
+        height: 120px;
+        background-color: #f00;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        position: absolute;
+        top: -60px;
+        right: 20px;
+        transform: rotate(340deg);
+        box-shadow: 0 0 40px 10px #fff;
+    }
+    .hoja-roja3{
+        width: 70px;
+        height: 120px;
+        background-color: #f00;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: absolute; 
+        top: -60px;
+        left: 20px;
+        transform: rotate(20deg);
+        box-shadow: 0 0 40px 10px #fff;
+    }
+    .hoja-roja4{
+        width: 60px;
+        height: 100px;
+        background-color: #f00;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: absolute; 
+        top: -80px;
+        left: 20px; 
+        transform: rotate(20deg);
+        z-index: -1;
+    }
+    .hoja-roja5{
+        width: 60px;
+        height: 100px;
+        background-color: #f00;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        position: absolute; 
+        top: -80px;
+        right: 20px; 
+        transform: rotate(340deg);
+        z-index: -1;
+    }
+    .maseta{
+        width: 120px;
+        height: 100px;
+        background-color: #aa4f00;
+        bottom: 0;
+        position: absolute;
+        left: -55px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .maseta::after{
+        content: '';
+        width: 150px;
+        height: 10px; 
+        background-color: #733600;
+        bottom: 100px;
+        position: absolute;
+        left: -15px;
+    }
+</style>
+<body>
+    <div class="flor">
+        <div class="tronco">
+            <div class="hoja-verde"></div>
+            <div class="hoja-verde2"></div>
+            <div class="espina"></div>
+            <div class="espina2"></div>
+            <div class="espina3"></div>
+            <div class="centro">
+                <div class="hoja-roja"></div>
+                <div class="hoja-roja2"></div>
+                <div class="hoja-roja3"></div>
+                <div class="hoja-roja4"></div>
+                <div class="hoja-roja5"></div>
+            </div>
+            <div class="maseta"></div>
+        </div>
+    </div>
+</body>
+</html>
